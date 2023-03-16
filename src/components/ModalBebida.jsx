@@ -11,7 +11,9 @@ const ModalBebida = () => {
         for(let i = 1; i < 16; i++) {
             if(receta[`strIngredient${i}`])
             ingredientes.push(
-                <li> {receta[`strMeasure${i}`]} {receta[`strIngredient${i}`]}</li>
+                <li key={i}> 
+                    {receta[`strMeasure${i}`]} {receta[`strIngredient${i}`]}
+                </li>
             )
         }
         return ingredientes
