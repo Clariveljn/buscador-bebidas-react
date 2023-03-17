@@ -28,7 +28,9 @@ const ModalBebida = () => {
             alt={`Imagen receta ${receta.strDrink}`} 
         />
         <ModalHeader>
-            <ModalTitle>{receta.strDrink}</ModalTitle>
+            <ModalTitle className="text-center">
+                {receta.strDrink}
+            </ModalTitle>
         </ModalHeader>
         <ModalBody>
             <div className="p-3">
